@@ -1,0 +1,95 @@
+:root{--main-color:orange}
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Mali', cursive;
+}
+header{box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+header .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .text h1{font-size: 35px;}
+header .text h1 span,header .icon{color: var(--main-color);}
+.head{margin-top: 60px;}
+.head .inner{text-align: center;}
+.head .text h2{font-size: 3em;}
+.head .text h2 span{color: var(--main-color);}
+.head .text p{font-size: 1.3em;}
+.form{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.form form {width:50%;}
+.form form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 0px 0px 1px;
+    display: block;
+}
+.form form input{
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 40px;
+    background-color: black;
+    color: white;
+}
+.form form input:hover{background-color: var(--main-color);}
+@media (max-width:768px){.form form {width: 90%;}}
+.notes{
+    width: 100%;
+    margin-top: 60px;
+}
+.notes .inner{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.notes .inner .note{
+    width: 30%;
+    line-height: 2;
+    box-shadow: rgba(0, 0, 0, 0.148) 0px 0px 0px 1px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.notes .inner .note .text{
+    padding: 10px;
+    height: 250px;
+    overflow: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.148);
+}
+.notes .inner .note .text h5{color: var(--main-color);}
+.notes .inner .note .icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 30px;
+    cursor: pointer;
+}
+.notes .inner .note .icon .fa-pen{color: var(--main-color);}
+.note ::-webkit-scrollbar {
+    width: 20px;
+    background-color: rgba(99, 99, 99, 0.2);
+}
+.note ::-webkit-scrollbar-thumb {background: var(--main-color);}
+@media (max-width:992px){.notes .inner .note{width: 49%;} }
+@media (max-width:768px){.notes .inner .note{width: 90%;}}
+footer{text-align: center;}
+footer h3 span{color: var(--main-color);}
